@@ -1,0 +1,62 @@
+:root{
+    --color : #e7e7ff;
+    --sub : #bdb7d6;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+   font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+   color: var(--color);
+   background: radial-gradient(1200px 600px at 15% -10%,rgba(109, 40, 217, 0.35),transparent 60%),radial-gradient(1200px 600px at 15% -10%,rgba(157, 78, 221, 0.25),transparent 60%), linear-gradient(180deg, #080214 0%, #0a0316 100%);
+   line-height: 1.6;
+}
+.container{
+    width: min(1100px,94%);
+    padding: 40px 0;
+    margin-inline: auto;
+}
+.section-title{
+    font-size: clamp(22px,3vw,32px);
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+.section-sub{
+    color: var(--sub);
+    margin-bottom: 32px;
+    font-size: 1rem;
+}
+.btn{
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #fff; 
+    background: linear-gradient(180deg,#9d4edd 0%,#6d28d9 100%);
+    box-shadow: 0 0 25px rgba(157, 78, 221, 0.55);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+
+}
+.btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 0 100px rgba(157, 78, 221, 0.6);
+}
+.btn.ghost{
+    background: transparent;
+    color: var(--color);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+}
+.hero{
+   min-height: 80vh;
+   display: grid;
+   place-items: center;
+   text-align: center;
+}
